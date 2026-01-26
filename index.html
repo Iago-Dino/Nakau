@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedido de Café – Pousada Vila Nakau</title>
+  <link rel="stylesheet" href="src/css/estilos.css">
+  <link rel="stylesheet" href="src/css/reset.css">
+</head>
+<body>
+  <header>
+    <h1>Selecione seu Café da Manhã</h1>
+    <p>Escolha até <strong>3 itens por pessoa</strong> (máx. 6 itens por pedido). Horário de serviço: 07:15–09:00</p>
+  </header>
+
+  <main>
+    <form id="breakfast-form" onsubmit="return false;">
+      <!-- Horário -->
+      <div class="form-group">
+        <label for="hora">Horário desejado:</label>
+        <input
+          type="time"
+          id="hora"
+          name="hora"
+          min="07:15"
+          max="09:00"
+          required
+        >
+      </div>
+
+      <!-- Itens do cardápio -->
+      <fieldset class="form-group">
+        <legend>Entradas</legend>
+        <label><input type="checkbox" name="item" value="Fatia de bolo"> Fatia de bolo</label>
+        <label><input type="checkbox" name="item" value="Fruta"> Fruta</label>
+        <label><input type="checkbox" name="item" value="Suco de polpa do dia"> Suco de polpa do dia</label>
+        <label><input type="checkbox" name="item" value="Café"> Café</label>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <legend>Cuscuz</legend>
+        <label><input type="checkbox" name="item" value="Cuscuz com ovos mexidos"> Cuscuz com ovos mexidos</label>
+        <label><input type="checkbox" name="item" value="Cuscuz Mainha Elza"> Cuscuz “Mainha Elza”</label>
+      </fieldset>
+
+      <!-- ... outras categorias (Sanduíches, Tapiocas, Omeletes) ... -->
+
+      <div class="form-group">
+        <button type="button" id="btn-whatsapp">Enviar via WhatsApp</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>• Temos chás (sachê) ou leite achocolatado (mediante solicitação)</p>
+  </footer>
+
+  <script src="src/Js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+/* reset simples */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.4;
+    background: #f5f2ed;
+    color: #4a3823;
+    padding: 1rem;
+  }
+  
+  header, footer {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  fieldset {
+    border: 1px solid #d4c4b5;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  legend {
+    font-weight: bold;
+  }
+  
+  label {
+    display: block;
+    margin: 0.3rem 0;
+  }
+  
+  button {
+    display: block;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    background: #b95e4d;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
